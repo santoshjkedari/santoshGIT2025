@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser123" value="Firefox"/>
+    <classes>
+      <class name="TestNgPack2.VerifyHostelForm">
+        <methods>
+          <include name="afterTest"/>
+          <include name="verifyFindYourAccount"/>
+          <include name="launchBrowser"/>
+          <include name="afterclass"/>
+          <include name="verifyFacultyPageInfo"/>
+          <include name="pomObject"/>
+        </methods>
+      </class> <!-- TestNgPack2.VerifyHostelForm -->
+      <class name="TestNgPack2.VerifyFacultyPage2">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="pomObject"/>
+          <include name="afterTest"/>
+          <include name="afterclass"/>
+          <include name="verifyFacultyPageInfo"/>
+        </methods>
+      </class> <!-- TestNgPack2.VerifyFacultyPage2 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser123" value="Chrome"/>
+    <classes>
+      <class name="TestNgPack2.VerifyHostelForm">
+        <methods>
+          <include name="afterTest"/>
+          <include name="verifyFindYourAccount"/>
+          <include name="launchBrowser"/>
+          <include name="afterclass"/>
+          <include name="verifyFacultyPageInfo"/>
+          <include name="pomObject"/>
+        </methods>
+      </class> <!-- TestNgPack2.VerifyHostelForm -->
+      <class name="TestNgPack2.VerifyFacultyPage2">
+        <methods>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestNgPack2.VerifyFacultyPage2 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
