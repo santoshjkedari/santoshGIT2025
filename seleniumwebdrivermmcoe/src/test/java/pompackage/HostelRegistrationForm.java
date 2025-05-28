@@ -39,8 +39,8 @@ public class HostelRegistrationForm {
 	
 	public void sendEmailOrPhone(String email)
 	{
-		//emailOrPhone.sendKeys(email);
-		emailOrPhone.click();
+		emailOrPhone.sendKeys(email);
+		
 	}
 	public void clickNext()
 	{
