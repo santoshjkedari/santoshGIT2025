@@ -43,7 +43,8 @@ public class FacultyInfoPage {
 	@FindBy (xpath="(//input[@name='email'])[1]")
     private WebElement email;
 	
-	@FindBy (xpath="(//input[@name='pass'])[2]")
+	//@FindBy (xpath="(//input[@name='pass'])[2]")
+	@FindBy (xpath="(//input[@name='pass123'])[2]")
     private WebElement pass;
 	
 	@FindBy (xpath="//span[@dir='auto' and text()='Forgotten password?']")
